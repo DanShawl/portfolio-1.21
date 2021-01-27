@@ -366,7 +366,7 @@ nav .nav-link:focus {
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: left;
-  background-color: #f1f1f1;
+  background-color: #f0f0f0;
 }
 
 .skills .skill-lists .skill-list-box h3 {
@@ -475,6 +475,44 @@ nav .nav-link:focus {
   display: none;
 }
 
+footer {
+  margin: 8em 2em 2em 2em;
+}
+
+footer .footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-main h1 {
+  font-size: 2.5rem;
+}
+
+footer .footer-main .footer-links {
+  margin: 2em 0 8em 0;
+}
+
+footer .footer-main .footer-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+footer .footer-main .footer-links h3:hover,
+footer .footer-main .footer-links h3:focus {
+  color: #8a8a8a;
+}
+
+footer span {
+  font-family: "Cabin", sans-serif;
+}
+
 @media screen and (min-width: 600px) {
   html {
     font-size: 22px;
@@ -536,6 +574,9 @@ nav .nav-link:focus {
   .projects h2 {
     max-width: 650px;
     margin: 0 auto;
+  }
+  footer {
+    margin-top: 5em;
   }
 }
 
@@ -617,6 +658,25 @@ nav .nav-link:focus {
     border-radius: 10px 10px 10px 10px;
     -webkit-box-shadow: 0 0 20px 10px #33333338;
             box-shadow: 0 0 20px 10px #33333338;
+  }
+  footer {
+    margin: 3em;
+  }
+  footer .footer-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-main .footer-links {
+    margin-top: 0;
+    margin-right: 2em;
   }
 }
 
@@ -796,6 +856,32 @@ nav .nav-link:focus {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  footer {
+    max-width: 800px;
+    margin: 3em auto 3em auto;
+  }
+  footer .footer-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-main h1 {
+    font-size: 4rem;
+  }
+  footer .footer-main .footer-links {
+    margin-top: 0;
+    margin-right: 2em;
+  }
+  footer .footer-main .footer-links h3 {
+    font-size: 1.75rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

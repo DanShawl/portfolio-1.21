@@ -292,7 +292,7 @@ nav {
       display: flex;
       align-items: flex-start;
       text-align: left;
-      background-color: rgb(241, 241, 241);
+      background-color: rgb(240, 240, 240);
 
       h3 {
         width: 50%;
@@ -384,6 +384,32 @@ nav {
   }
 }
 
+footer {
+  margin: 8em 2em 2em 2em;
+  .footer-main {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 2.5rem;
+    }
+    .footer-links {
+      margin: 2em 0 8em 0;
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5em;
+        transition-duration: 250ms;
+      }
+      h3:hover,
+      h3:focus {
+        color: $colorSecondary;
+      }
+    }
+  }
+  span {
+    font-family: $fontPrimary;
+  }
+}
+
 @media screen and (min-width: 600px) {
   nav {
     // height: 40px;
@@ -453,6 +479,9 @@ nav {
       margin: 0 auto;
     }
   }
+  footer {
+    margin-top: 5em;
+  }
 }
 
 @media screen and (min-width: 730px) {
@@ -515,6 +544,23 @@ nav {
           border-radius: 10px 10px 10px 10px;
           // box-shadow: -20px 0 20px -5px #69696938;
           box-shadow: 0 0 20px 10px #33333338;
+        }
+      }
+    }
+  }
+  footer {
+    margin: 3em;
+    .footer-main {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      h1 {
+        // width: 60%;
+      }
+      .footer-links {
+        margin-top: 0;
+        margin-right: 2em;
+        h3 {
         }
       }
     }
@@ -687,6 +733,25 @@ nav {
       max-width: 1000px;
       .skill-list-box {
         flex: 1;
+      }
+    }
+  }
+  footer {
+    max-width: 800px;
+    margin: 3em auto 3em auto;
+    .footer-main {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      h1 {
+        font-size: 4rem;
+      }
+      .footer-links {
+        margin-top: 0;
+        margin-right: 2em;
+        h3 {
+          font-size: 1.75rem;
+        }
       }
     }
   }
