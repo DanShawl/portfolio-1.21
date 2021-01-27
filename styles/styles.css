@@ -49,6 +49,47 @@ i {
   color: #8a8a8a;
 }
 
+nav {
+  z-index: 100;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+  border-bottom: 1px solid #e7e7e7;
+  -webkit-box-shadow: 0px -2px 5px 1px #35353593;
+          box-shadow: 0px -2px 5px 1px #35353593;
+}
+
+nav h3 {
+  margin-left: 1em;
+  color: #292929;
+}
+
+nav .nav-links {
+  margin-right: 2em;
+  font-size: 0.9em;
+}
+
+nav .nav-links .nav-link {
+  margin-left: 1.5em;
+}
+
+nav .nav-link:hover,
+nav .nav-link:focus {
+  color: #8a8a8a;
+}
+
 .header-container {
   margin: 0 1em;
   height: 100vh;
@@ -85,15 +126,17 @@ i {
 }
 
 .header-container .header-btns .contact-btn {
-  background-color: #292929;
-  color: #fff;
+  background-color: #f0f0f0;
+  color: #292929;
   padding: 0.75em 1em;
-  border-radius: 5px;
+  border-radius: 1px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .header-container .header-btns .contact-btn:hover,
 .header-container .header-btns .contact-btn:focus {
-  background-color: #8a8a8a;
+  background-color: #dadada;
 }
 
 .header-container .header-btns .resume-btn {
@@ -115,21 +158,21 @@ i {
 }
 
 .header-container .header-socials {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  top: 1em;
-  right: 1em;
   font-size: 1.5rem;
 }
 
 .header-container .header-socials i {
-  margin: 0.5em 0;
+  margin: 0.25em 0.5em 1em 0.15em;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+.header-container .header-socials i:hover,
+.header-container .header-socials i:focus {
+  color: #8a8a8a;
 }
 
 .skills {
@@ -302,6 +345,11 @@ i {
 .projects .projects-grid .project-card .project-info .project-link {
   font-size: 1.25rem;
   margin: 0 0.5em 0 0.5em;
+}
+
+.projects .projects-grid .project-card .project-info .project-link i:hover,
+.projects .projects-grid .project-card .project-info .project-link i:focus {
+  color: #8a8a8a;
 }
 
 .projects .projects-grid .project-card .project-info .project-tech {
@@ -488,12 +536,27 @@ i {
 }
 
 @media screen and (min-width: 1000px) {
+  nav {
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+    border-bottom: 0px solid white;
+  }
+  nav h3 {
+    margin: 1.5em 0 0 2em;
+  }
+  nav .nav-links {
+    margin: 1.5em 3em 0 0;
+  }
   .header-container a,
   .header-container h4 {
     font-size: 0.75rem;
   }
   .header-container h1 {
     font-size: 1rem;
+  }
+  .header-socials i {
+    font-size: 1.5em;
   }
   .skills {
     margin: 10em 3em 2em 3em;
@@ -510,6 +573,11 @@ i {
         grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-auto-rows: 100px 75px 50px 100px 50px 100px;
         grid-template-areas: '. . . . cb . . jb . rb . .' '. hb . . . . . . . . . .' '. . . . . . . . . . . .' '. . . . . . . . . . gb .' '. . sb . . . wb . eb . . .' '. . . bb . . . . . . . .';
+  }
+  .skills .skills-item h4,
+  .skills .skills-item i {
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
   }
   .skills .skills-item h4 {
     font-size: 0.65rem;

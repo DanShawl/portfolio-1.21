@@ -50,6 +50,47 @@ i {
 .title-faded {
   color: $colorSecondary;
 }
+// .fade-in {
+//   opacity: 0;
+//   transition: opacity 250ms ease-in;
+// }
+
+nav {
+  z-index: 100;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  box-shadow: 0px -2px 5px 1px #35353593;
+
+  h3 {
+    margin-left: 1em;
+    color: $colorPrimary;
+  }
+  // i {
+  //   font-size: 1.5em;
+  //   margin-left: 1em;
+  //   color: $colorPrimary;
+  // }
+  .nav-links {
+    margin-right: 2em;
+    font-size: 0.9em;
+    .nav-link {
+      margin-left: 1.5em;
+    }
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $colorSecondary;
+  }
+}
+
 .header-container {
   margin: 0 1em;
   height: 100vh;
@@ -72,15 +113,15 @@ i {
     margin-top: 2em;
     font-size: 1.25rem;
     .contact-btn {
-      // background-color: rgb(196, 196, 196);
-      background-color: $colorPrimary;
-      color: #fff;
+      background-color: rgb(240, 240, 240);
+      color: $colorPrimary;
       padding: 0.75em 1em;
-      border-radius: 5px;
+      border-radius: 1px;
+      transition-duration: 250ms;
     }
     .contact-btn:hover,
     .contact-btn:focus {
-      background-color: $colorSecondary;
+      background-color: rgb(218, 218, 218);
     }
     .resume-btn {
       margin-left: 1em;
@@ -97,17 +138,21 @@ i {
     }
   }
   .header-socials {
-    position: absolute;
+    // position: absolute;
+    // top: 1em;
+    // right: 1em;
     display: flex;
-    flex-direction: column;
-    top: 1em;
-    right: 1em;
+    // flex-direction: column;
     // margin-top: 2em;
     font-size: 1.5rem;
     i {
-      margin: 0.5em 0;
-      // margin: 0 0.5em;
+      margin: 0.25em 0.5em 1em 0.15em;
+      transition-duration: 250ms;
     }
+  }
+  .header-socials i:hover,
+  .header-socials i:focus {
+    color: $colorSecondary;
   }
 }
 
@@ -207,6 +252,10 @@ i {
           font-size: 1.25rem;
           margin: 0 0.5em 0 0.5em;
         }
+        .project-link i:hover,
+        .project-link i:focus {
+          color: $colorSecondary;
+        }
         .project-tech {
           display: flex;
           flex-wrap: wrap;
@@ -253,6 +302,9 @@ i {
 }
 
 @media screen and (min-width: 600px) {
+  nav {
+    // height: 40px;
+  }
   html {
     font-size: 22px;
   }
@@ -376,6 +428,17 @@ i {
   }
 }
 @media screen and (min-width: 1000px) {
+  nav {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0;
+    border-bottom: 0px solid white;
+    h3 {
+      margin: 1.5em 0 0 2em;
+    }
+    .nav-links {
+      margin: 1.5em 3em 0 0;
+    }
+  }
   .header-container a,
   .header-container h4 {
     font-size: 0.75rem;
@@ -383,6 +446,9 @@ i {
   }
   .header-container h1 {
     font-size: 1rem;
+  }
+  .header-socials i {
+    font-size: 1.5em;
   }
   .skills {
     p {
@@ -404,6 +470,10 @@ i {
         '. . . . . . . . . . gb .'
         '. . sb . . . wb . eb . . .'
         '. . . bb . . . . . . . .';
+    }
+    .skills-item h4,
+    .skills-item i {
+      transition-duration: 200ms;
     }
     .skills-item h4 {
       font-size: 0.65rem;
