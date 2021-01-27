@@ -13,6 +13,9 @@ font-family: 'PT Sans', sans-serif;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   box-sizing: border-box;
 }
@@ -157,67 +160,185 @@ nav {
 }
 
 .skills {
+  margin-top: 20em;
   p {
     margin-top: 0.75em;
     color: $colorSecondary;
   }
   margin: 0 1em;
+
   .skills-grid {
-    margin-top: 3em;
     display: grid;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-    grid-auto-rows: 100px;
-    gap: 1em;
+    margin: -22em auto 0 auto;
+    // max-width: 1400px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-auto-rows: 100px 75px 75px 50px 20px 100px 20px 50px 100px;
+    grid-template-areas:
+      '. . . . cb . . . . . . .'
+      'hb . . . . . . . jb . . .'
+      '. . . . . . . . . . . rb'
+      '. . . . . . . . . . . .'
+      '. . . . . . . . . . . .'
+      '. . . . . . . . . . gb .'
+      'sb . . . . . . . . eb . .'
+      '. . . . . . wb . . . . .'
+      '. . . bb . . . . . . . .';
   }
-  .skills-item {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    justify-content: center;
-    padding: 1em;
-    gap: 1em;
-    background-color: gray;
+  .skills-item h4,
+  .skills-item i {
+    transition-duration: 200ms;
+  }
+  .skills-item h4 {
+    font-size: 0.65rem;
+    opacity: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .skills-item i {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .skills-item:hover {
     i {
-      font-size: 1.75rem;
+      color: $colorSecondary;
+    }
+    // background-color: black;
+    h4 {
+      opacity: 0.5;
     }
   }
+
   .html-box {
-    grid-area: 1/1/2/5;
-    background-color: #f0652965;
+    grid-area: hb;
+
+    background-color: #f0652900;
+    i {
+      color: #f0652965;
+    }
   }
   .css-box {
-    grid-area: 1/5/2/9;
-    background-color: rgba(106, 179, 253, 0.425);
+    grid-area: cb;
+    align-self: flex-end;
+    background-color: rgba(106, 179, 253, 0);
+    i {
+      color: rgba(106, 179, 253, 0.623);
+    }
   }
   .js-box {
-    grid-area: 2/1/3/6;
-    background-color: #f0da4f65;
+    grid-area: jb;
+    background-color: #f0da4f00;
+    align-items: flex-start;
+    i {
+      color: #f0da4f86;
+    }
   }
   .react-box {
-    grid-area: 2/6/3/9;
-    background-color: #61dcfb65;
+    grid-area: rb;
+    align-self: flex-start;
+    background-color: #61dcfb00;
+    i {
+      color: #61dcfba8;
+    }
   }
   .sass-box {
-    grid-area: 3/4/4/9;
-    background-color: rgba(204, 102, 153, 0.432);
+    grid-area: sb;
+    align-self: flex-end;
+    background-color: rgba(204, 102, 153, 0);
+    i {
+      align-self: flex-end;
+      color: rgba(204, 102, 153, 0.432);
+    }
   }
   .git-box {
-    grid-area: 3/1/4/4;
-    background-color: #d8d8d8;
+    grid-area: gb;
+    background-color: #d8d8d800;
+    align-items: flex-end;
+    i {
+      align-self: flex-end;
+      color: #b3b3b3;
+    }
   }
   .wp-box {
-    grid-area: 4/1/5/5;
-    background-color: #21749b65;
+    grid-area: wb;
+    background-color: #21749b00;
+    align-content: flex-start;
+    i {
+      color: #21749b8e;
+    }
   }
   .elementor-box {
-    grid-area: 4/5/5/9;
-    background-color: rgba(214, 73, 143, 0.411);
+    grid-area: eb;
+    align-self: flex-start;
+    background-color: rgba(214, 73, 143, 0);
+    i {
+      color: rgba(214, 73, 143, 0.562);
+    }
   }
   .bs-box {
-    grid-area: 5/1/6/6;
-    background-color: #63518065;
+    grid-area: bb;
+    background-color: #63518000;
+    i {
+      color: #63518093;
+    }
   }
+
+  // .skills-grid {
+  //   margin-top: 3em;
+  //   display: grid;
+  //   grid-template-columns: repeat(8, minmax(0, 1fr));
+  //   grid-auto-rows: 100px;
+  //   gap: 1em;
+  // }
+  // .skills-item {
+  //   font-size: 1.2rem;
+  //   display: flex;
+  //   flex-direction: column;
+  //   // align-items: center;
+  //   justify-content: center;
+  //   padding: 1em;
+  //   gap: 1em;
+  //   background-color: gray;
+  //   i {
+  //     font-size: 1.75rem;
+  //   }
+  // }
+  // .html-box {
+  //   grid-area: 1/1/2/5;
+  //   background-color: #f0652965;
+  // }
+  // .css-box {
+  //   grid-area: 1/5/2/9;
+  //   background-color: rgba(106, 179, 253, 0.425);
+  // }
+  // .js-box {
+  //   grid-area: 2/1/3/6;
+  //   background-color: #f0da4f65;
+  // }
+  // .react-box {
+  //   grid-area: 2/6/3/9;
+  //   background-color: #61dcfb65;
+  // }
+  // .sass-box {
+  //   grid-area: 3/4/4/9;
+  //   background-color: rgba(204, 102, 153, 0.432);
+  // }
+  // .git-box {
+  //   grid-area: 3/1/4/4;
+  //   background-color: #d8d8d8;
+  // }
+  // .wp-box {
+  //   grid-area: 4/1/5/5;
+  //   background-color: #21749b65;
+  // }
+  // .elementor-box {
+  //   grid-area: 4/5/5/9;
+  //   background-color: rgba(214, 73, 143, 0.411);
+  // }
+  // .bs-box {
+  //   grid-area: 5/1/6/6;
+  //   background-color: #63518065;
+  // }
   // .figma-box {
   //   grid-area: 5/1/6/3;
   //   background-color: #00c05b;
@@ -317,18 +438,21 @@ nav {
     color: $colorPrimary;
   }
   .header-container {
-    margin: 0 3em;
+    margin: 0 3em 8em 3em;
     align-items: center;
     text-align: center;
 
     h1 {
       margin-bottom: 1em;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     p {
       font-size: 2.3rem;
       font-weight: 900;
       max-width: 800px;
+    }
+    a {
+      font-size: 0.75rem;
     }
   }
 
@@ -345,11 +469,14 @@ nav {
     }
 
     .skills-grid {
-      margin: 0 auto;
-      max-width: 800px;
-      margin-top: 6em;
-      grid-auto-rows: 150px;
+      margin-top: -19em;
     }
+    // .skills-grid {
+    //   margin: 0 auto;
+    //   max-width: 800px;
+    //   margin-top: 6em;
+    //   grid-auto-rows: 150px;
+    // }
   }
 
   .projects {
@@ -454,7 +581,7 @@ nav {
     p {
       font-size: 0.75rem;
     }
-    margin: 10em 3em 2em 3em;
+    margin: 1em 3em 2em 3em;
     text-align: center;
     width: 80%;
 
@@ -464,12 +591,12 @@ nav {
       grid-template-columns: repeat(12, minmax(0, 1fr));
       grid-auto-rows: 100px 75px 50px 100px 50px 100px;
       grid-template-areas:
-        '. . . . cb . . jb . rb . .'
-        '. hb . . . . . . . . . .'
-        '. . . . . . . . . . . .'
+        '. . . . hb . . . . . . .'
+        '. . . . . . . jb . rb . .'
+        '. cb . . . . . . . . . .'
         '. . . . . . . . . . gb .'
-        '. . sb . . . wb . eb . . .'
-        '. . . bb . . . . . . . .';
+        '. . sb . . . . . eb . . .'
+        '. . . bb . . wb . . . . .';
     }
     .skills-item h4,
     .skills-item i {
@@ -483,7 +610,7 @@ nav {
     }
     .skills-item i {
       font-size: 2.25rem;
-      margin-bottom: 0;
+      margin-bottom: 0.15em;
       padding-bottom: 0;
     }
     .skills-item:hover {
@@ -535,7 +662,7 @@ nav {
     }
     .react-box {
       grid-area: rb;
-      align-self: flex-start;
+      align-self: flex-end;
       background-color: #61dcfb00;
       i {
         color: #61dcfba8;
