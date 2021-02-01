@@ -53,6 +53,16 @@ i {
   color: #8a8a8a;
 }
 
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 nav {
   z-index: 100;
   background-color: #fff;
