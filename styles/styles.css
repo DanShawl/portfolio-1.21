@@ -477,6 +477,10 @@ nav .nav-link:focus {
   background-color: rgba(255, 187, 109, 0.267);
 }
 
+.projects .projects-grid .pc-rpt {
+  background-color: rgba(255, 237, 74, 0.267);
+}
+
 .projects .projects-grid .pc-pb {
   background-color: #70eaff28;
 }
