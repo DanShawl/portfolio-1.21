@@ -105,7 +105,7 @@ nav .nav-link:focus {
 }
 
 .header-container {
-  margin: 0 1em;
+  margin: 0 1em 5em;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
