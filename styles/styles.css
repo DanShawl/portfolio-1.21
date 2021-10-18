@@ -140,6 +140,8 @@ nav .nav-link:focus {
 }
 
 .header-container .header-btns .contact-btn {
+  text-align: center;
+  width: 50%;
   background-color: #f0f0f0;
   color: #292929;
   padding: 0.75em 1em;
@@ -154,6 +156,7 @@ nav .nav-link:focus {
 }
 
 .header-container .header-btns .resume-btn {
+  width: 45%;
   margin-left: 1em;
 }
 
@@ -429,6 +432,12 @@ nav .nav-link:focus {
   gap: 0.5em;
 }
 
+.projects .projects-grid .project-card .project-info .project-description {
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
+
 .projects .projects-grid .project-card .project-info .project-links {
   margin-top: 1em;
 }
@@ -467,6 +476,10 @@ nav .nav-link:focus {
   width: 75%;
   -webkit-box-shadow: 0px -2px 20px 1px #35353593;
           box-shadow: 0px -2px 20px 1px #35353593;
+}
+
+.projects .projects-grid .pc-llt {
+  background-color: #d6e7ff;
 }
 
 .projects .projects-grid .pc-ll {
@@ -669,7 +682,7 @@ footer span {
     width: 40%;
     max-width: 250px;
     margin-left: 2em;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 6px 6px 6px 6px;
     -webkit-box-shadow: 0 0 20px 10px #33333338;
             box-shadow: 0 0 20px 10px #33333338;
   }
