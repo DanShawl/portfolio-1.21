@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Hind:wght@300;400;500;600;700&family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 /*
   font-family: 'Cabin', sans-serif;
 font-family: 'Hind', sans-serif;
@@ -25,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cabin", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: #292929;
   letter-spacing: 0.025rem;
 }
@@ -35,12 +36,12 @@ h2 {
 }
 
 p {
-  font-family: "Cabin", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 a {
   text-decoration: none;
-  font-family: "Cabin", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: 900;
   color: #292929;
 }
@@ -120,7 +121,12 @@ nav .nav-link:focus {
 }
 
 .header-container h1 {
-  font-size: 3.75rem;
+  font-size: 2.5rem;
+  color: #8a8a8a;
+}
+
+.header-container span {
+  color: #292929;
 }
 
 .header-container p {
@@ -371,7 +377,7 @@ nav .nav-link:focus {
 .skills .skill-lists .skill-list-box {
   padding: 1em;
   margin-bottom: 1em;
-  height: 125px;
+  height: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,6 +504,18 @@ nav .nav-link:focus {
   background-color: #70eaff28;
 }
 
+.projects .projects-grid .pc-bwb {
+  background-color: #f0f0f0;
+}
+
+.projects .projects-grid .pc-lb {
+  background-color: rgba(255, 187, 109, 0.267);
+}
+
+.projects .projects-grid .pc-ic {
+  background-color: rgba(247, 194, 255, 0.267);
+}
+
 .projects .desktop-image {
   display: none;
 }
@@ -537,7 +555,7 @@ footer .footer-main .footer-links h3:focus {
 }
 
 footer span {
-  font-family: "Cabin", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 @media screen and (min-width: 600px) {
@@ -568,7 +586,7 @@ footer span {
   }
   .header-container h1 {
     margin-bottom: 1em;
-    font-size: 1.2rem;
+    font-size: 2.8rem;
   }
   .header-container p {
     font-size: 2.3rem;
@@ -725,7 +743,10 @@ footer span {
     font-size: 0.75rem;
   }
   .header-container h1 {
-    font-size: 1rem;
+    font-size: 2.5rem;
+  }
+  .header-container h2 {
+    font-size: 1.5rem;
   }
   .header-socials i {
     font-size: 1.5em;
