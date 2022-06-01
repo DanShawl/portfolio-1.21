@@ -63,6 +63,9 @@ i {
 .fade-in.appear {
   opacity: 1;
 }
+// .title-darker {
+//   color: $colorPrimary;
+// }
 
 nav {
   z-index: 100;
@@ -113,6 +116,13 @@ nav {
     font-size: 2.5rem;
     color: #8a8a8a;
   }
+  .title-darker {
+    color: $colorPrimary;
+  }
+  .title-lighter {
+    color: #8a8a8a;
+  }
+
   span {
     color: $colorPrimary;
   }
@@ -121,13 +131,16 @@ nav {
     color: $colorSecondary;
   }
   .header-btns {
+    width: 100%;
     display: flex;
     align-items: center;
+    // justify-content: center;
     margin-top: 2em;
     font-size: 1.25rem;
     .contact-btn {
       text-align: center;
-      width: 50%;
+      // width: 50%;
+      width: fit-content;
       background-color: rgb(240, 240, 240);
       color: $colorPrimary;
       padding: 0.75em 1em;
@@ -139,7 +152,8 @@ nav {
       background-color: rgb(218, 218, 218);
     }
     .resume-btn {
-      width: 45%;
+      // width: 45%;
+      width: fit-content;
       margin-left: 1em;
       i {
         margin-right: 0.25em;
@@ -154,12 +168,8 @@ nav {
     }
   }
   .header-socials {
-    // position: absolute;
-    // top: 1em;
-    // right: 1em;
     display: flex;
-    // flex-direction: column;
-    // margin-top: 2em;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
     i {
       margin: 0.25em 0.5em 1em 0.15em;
@@ -463,13 +473,16 @@ footer {
     color: $colorPrimary;
   }
   .header-container {
+    .header-btns {
+      justify-content: center;
+    }
     margin: 0 3em 8em 3em;
     align-items: center;
     text-align: center;
 
     h1 {
       margin-bottom: 1em;
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
     p {
       font-size: 2.3rem;
