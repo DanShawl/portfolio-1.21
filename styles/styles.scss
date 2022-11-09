@@ -116,6 +116,9 @@ nav {
     font-size: 2.5rem;
     color: #8a8a8a;
   }
+  .title-description {
+    font-size: 1.5rem;
+  }
   .title-darker {
     color: $colorPrimary;
   }
@@ -298,7 +301,7 @@ nav {
       color: rgba(214, 73, 143, 0.562);
     }
   }
-  .bs-box {
+  .nj-box {
     grid-area: bb;
     background-color: #63518000;
     i {
@@ -634,6 +637,7 @@ footer {
       margin: 1.5em 3em 0 0;
     }
   }
+
   .header-container a,
   .header-container h4 {
     font-size: 0.75rem;
@@ -649,6 +653,7 @@ footer {
   .header-socials i {
     font-size: 1.5em;
   }
+
   .skills {
     h2 {
       font-size: 1.5rem;

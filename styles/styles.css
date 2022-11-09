@@ -125,6 +125,10 @@ nav .nav-link:focus {
   color: #8a8a8a;
 }
 
+.header-container .title-description {
+  font-size: 1.5rem;
+}
+
 .header-container .title-darker {
   color: #292929;
 }
@@ -367,14 +371,14 @@ nav .nav-link:focus {
   color: rgba(214, 73, 143, 0.562);
 }
 
-.skills .bs-box {
+.skills .nj-box {
   -ms-grid-row: 9;
   -ms-grid-column: 4;
   grid-area: bb;
   background-color: #63518000;
 }
 
-.skills .bs-box i {
+.skills .nj-box i {
   color: #63518093;
 }
 
