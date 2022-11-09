@@ -311,7 +311,7 @@ nav {
     .skill-list-box {
       padding: 1em;
       margin-bottom: 1em;
-      height: 145px;
+      height: 190px;
       display: flex;
       align-items: flex-start;
       text-align: left;
@@ -641,6 +641,7 @@ footer {
   }
   .header-container h1 {
     font-size: 2.5rem;
+    max-width: 1300px;
   }
   .header-container h2 {
     font-size: 1.5rem;
@@ -775,11 +776,11 @@ footer {
         color: rgba(214, 73, 143, 0.562);
       }
     }
-    .bs-box {
+    .nj-box {
       grid-area: bb;
       background-color: #63518000;
       i {
-        color: #63518093;
+        color: #69805193;
       }
     }
     // .figma-box {
